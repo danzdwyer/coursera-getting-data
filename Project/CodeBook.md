@@ -4,7 +4,7 @@ The description for the original data collected for the accelerometers from the 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-###Extraction process
+###Extraction process steps
 
 * Read in the datasets for train,test and subject and create respective variables
 * Merge X train and X test sets into one dataset
@@ -15,20 +15,23 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 * Set column names for merged y dataset
 * Extract only features containing measurements on the mean and standard deviation 
 * Combined all merged results for x,y and subject into one dataset
-* Create final data set which contains the average of each variable for each activity and each subject.
+* Create final data set called tidySetAvg which contains the average of each variable for each activity and each subject.
 * Set column name for activity and subject in final dataset
 * Write the final dataset to a txt file called "tidySet_UCI_HAR_AVG_Dataset.txt"
+* The variable tidySetAvg contains the average of each variable for each activity and each subject, which contains 180 rows and 68 columns. 
+
+
 
  ##Variables
  ### The meaning of the variables in " tidySet_UCI_HAR_AVG_Dataset.txt"
-
+ 
 * Column: Subject
 * Description: Displays the test subject's id, who is performing the activity
 
 * Column: Activity
 * Description: Description of activity being performed.
 
-* The below variables contain the average for each variable,activity and subject from the original dataset, for each activity and each subject.
+* N.B. the description for the below variables can be found in the features_info.txt file from the original data set downloaded.
 
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
